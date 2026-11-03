@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Guia visual da Locadora Fácil: cores, tipografia, espaçamentos e aplicações da marca." />
+	<meta name="color-scheme" content="light dark" />
+	<title>Design System · Locadora Fácil</title>
+	<link rel="stylesheet" href="design.css" />
+	<script src="theme.js"></script>
+	<script src="design.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="../"><img src="../images/icone-locadora-facil-v2.png" alt="" width="44" height="44" /><span>Locadora Fácil</span></a>
+			<nav aria-label="Navegação da documentação"><a href="../">Início</a><a href="#paleta">Cores</a><a href="#tipografia">Tipografia</a><a href="#marca">Marca</a></nav>
+			<button class="theme-toggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false"><span class="theme-symbol" aria-hidden="true">◐</span><span class="theme-label">Tema escuro</span></button>
+		</div>
+	</header>
+	<main id="conteudo" class="container">
+		<section class="hero" aria-labelledby="titulo">
+			<div class="hero-top"><span class="eyebrow">Documentação do design system</span><span class="version">v1.0</span></div>
+			<h1 id="titulo">Locadora <span>Fácil.</span></h1>
+			<p>Uma identidade simples, clara e feita para colocar você no caminho. Este guia reúne as cores, a tipografia e os elementos visuais do nosso sistema de aluguel de carros.</p>
+			<a class="button" href="../"><span aria-hidden="true">←</span> Voltar ao sistema</a>
+			<div class="hero-index"><span>Guia de identidade visual</span><span>Cores · Tipografia · Marca</span></div>
+		</section>
+
+		<section id="paleta" class="section" aria-labelledby="titulo-paleta">
+			<div class="section-heading"><div><span class="eyebrow">01 / Paleta base</span><h2 id="titulo-paleta">Escala cromática</h2></div><p>Azul para orientar a jornada.<br />Neutros para dar espaço ao conteúdo.</p></div>
+			<div id="primary-palette" class="palette-grid" aria-label="Escala de azuis"></div>
+			<div id="neutral-palette" class="palette-grid neutral-palette" aria-label="Escala de neutros"></div>
+			<h3 class="subheading">Cores de estado</h3>
+			<div id="status-palette" class="palette-grid status-palette" aria-label="Cores de estado"></div>
+		</section>
+
+		<section id="tokens" class="section" aria-labelledby="titulo-tokens">
+			<div class="section-heading"><div><span class="eyebrow">02 / Tokens semânticos</span><h2 id="titulo-tokens">Cada cor tem uma função</h2></div><p>O tema claro segue a aplicação.<br />O escuro é uma prévia para este guia.</p></div>
+			<div class="table-wrap"><table><caption class="sr-only">Cores e funções nos temas claro e escuro</caption><thead><tr><th scope="col">Token</th><th scope="col">Onde usar</th><th scope="col">Claro</th><th scope="col">Escuro</th></tr></thead><tbody id="token-rows"></tbody></table></div>
+		</section>
+
+		<section id="tipografia" class="section" aria-labelledby="titulo-tipografia">
+			<div class="section-heading"><div><span class="eyebrow">03 / Tipografia</span><h2 id="titulo-tipografia">Leitura fácil, em cada tela</h2></div></div>
+			<div class="two-columns">
+				<article class="panel"><span class="eyebrow">Família tipográfica</span><div class="font-sample">Aa</div><h3>System UI / Sans-serif</h3><p>A família do sistema operacional mantém a leitura familiar e consistente. A aplicação usa a pilha padrão do Bootstrap, com Segoe UI, Roboto ou a fonte nativa disponível.</p><code>system-ui, -apple-system, "Segoe UI", Roboto, sans-serif</code></article>
+				<article class="panel"><span class="eyebrow">Regras de uso</span><h3 class="rules-title">Hierarquia sem complicação.</h3><ul class="rules"><li>Use um título principal por página.</li><li>Prefira os pesos 600 e 700 para destacar títulos e ações.</li><li>Mantenha textos funcionais em uma fonte sem serifa.</li><li>Use textos de apoio com contraste suficiente em ambos os temas.</li><li>Em telas pequenas, reduza o título sem comprometer a leitura.</li></ul></article>
+			</div>
+			<div class="type-list">
+				<article class="type-row"><div><span class="eyebrow">Marca</span><code>21,6 px · 700</code></div><p class="type-brand">Locadora Fácil</p></article>
+				<article class="type-row"><div><span class="eyebrow">H1</span><code>28,8 px · 600</code></div><p class="type-h1">Seu próximo aluguel começa aqui.</p></article>
+				<article class="type-row"><div><span class="eyebrow">H2</span><code>19,2 px · 500</code></div><p class="type-h2">Escolha o carro para o seu caminho</p></article>
+				<article class="type-row"><div><span class="eyebrow">Preço</span><code>21,6 px · 600</code></div><p class="type-price">R$ 120,00 <span>/ diária</span></p></article>
+				<article class="type-row"><div><span class="eyebrow">Corpo</span><code>16 px · 400</code></div><p>Consulte os veículos, faça seu pedido e acompanhe cada etapa do aluguel.</p></article>
+				<article class="type-row"><div><span class="eyebrow">Navegação</span><code>14,4 px · 600</code></div><p class="type-nav">Início &nbsp; Carros &nbsp; Meus pedidos &nbsp; Contratos &nbsp; Meu cadastro</p></article>
+				<article class="type-row"><div><span class="eyebrow">Apoio</span><code>14 px · 400</code></div><p class="type-caption">As datas de retirada e devolução entram no cálculo das diárias.</p></article>
+			</div>
+		</section>
+
+		<div class="two-columns metrics-section">
+			<section class="panel" id="espacamento" aria-labelledby="titulo-espacamento"><span class="eyebrow">04 / Espaçamento</span><h2 id="titulo-espacamento">Espaço para respirar</h2><p>Uma escala de referência para organizar conteúdo e manter o ritmo entre seções.</p><div id="spacing-scale" class="spacing-scale"></div></section>
+			<section class="panel" aria-labelledby="titulo-raios"><span class="eyebrow">05 / Arredondamentos</span><h2 id="titulo-raios">Detalhes que conectam</h2><p>Dos campos de formulário aos ícones da conta, cada raio tem seu lugar.</p><div id="radius-scale" class="radius-scale"></div></section>
+		</div>
+
+		<section id="marca" class="section" aria-labelledby="titulo-marca">
+			<div class="section-heading"><div><span class="eyebrow">06 / Marca</span><h2 id="titulo-marca">Uma marca, diferentes espaços</h2></div><p>Carro e chave: a essência do aluguel.<br />Sempre com fundo transparente.</p></div>
+			<div class="brand-grid">
+				<article class="panel brand-card"><span class="eyebrow">Horizontal / Principal</span><div class="logo-stage light-stage"><div class="logo-lockup"><img src="../images/icone-locadora-facil-v2.png" alt="" /><span>Locadora Fácil</span></div><span class="stage-label">Fundo claro</span></div><div class="logo-stage dark-stage"><div class="logo-lockup"><img src="../images/icone-locadora-facil-v2.png" alt="" /><span>Locadora Fácil</span></div><span class="stage-label">Fundo escuro</span></div><p>Uso: cabeçalho, páginas públicas e apresentações.</p></article>
+				<article class="panel brand-card"><span class="eyebrow">Empilhada</span><div class="logo-stage light-stage"><div class="logo-lockup stacked"><img src="../images/icone-locadora-facil-v2.png" alt="" /><span>Locadora Fácil</span></div><span class="stage-label">Fundo claro</span></div><div class="logo-stage dark-stage"><div class="logo-lockup stacked"><img src="../images/icone-locadora-facil-v2.png" alt="" /><span>Locadora Fácil</span></div><span class="stage-label">Fundo escuro</span></div><p>Uso: capas, telas de boas-vindas e espaços verticais.</p></article>
+				<article class="panel brand-card"><span class="eyebrow">Símbolo / Ícone</span><div class="logo-stage light-stage"><img class="standalone-icon" src="../images/icone-locadora-facil-v2.png" alt="Ícone de carro e chave em fundo claro" /><span class="stage-label">Fundo claro</span></div><div class="logo-stage blue-stage"><img class="standalone-icon" src="../images/icone-locadora-facil-v2.png" alt="Ícone branco de carro e chave em fundo azul" /><span class="stage-label">Fundo da marca</span></div><p>Uso: cabeçalho compacto e espaços de tamanho reduzido.</p></article>
+			</div>
+			<div class="brand-guidelines"><div><span class="eyebrow">Boas práticas</span><h3>Deixe a marca respirar.</h3></div><ul class="rules"><li>Use a versão branca em fundos escuros ou azuis.</li><li>Em fundos claros, use a versão monocromática escura.</li><li>Preserve as proporções e uma margem livre ao redor do símbolo.</li><li>Não aplique sombras, estique ou gire o ícone.</li></ul><a class="button" href="../images/icone-locadora-facil-v2.png" download="icone-locadora-facil.png">Baixar ícone <span aria-hidden="true">↓</span></a></div>
+		</section>
+	</main>
+	<footer class="container footer"><span>Locadora Fácil · Miguel Saraiva Ferreira</span><a href="https://lab-carflow.vercel.app/design" target="_blank" rel="noopener noreferrer">Referência visual: CarFlow ↗</a></footer>
+</body>
+</html>

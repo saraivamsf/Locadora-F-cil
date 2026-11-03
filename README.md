@@ -50,6 +50,12 @@
 
 ## 🔗 Links Úteis
 
+- 📄 **Guia visual em PDF:** [Design system da Locadora Fácil](output/pdf/design-system-locadora-facil.pdf)
+
+- 🎨 **Design system:** [Guia visual](dist/design/index.html) · [Abrir no navegador](http://localhost:3000/design/)
+
+- 📐 **Modelagem do sistema:** [PDF com casos de uso, histórias de usuário, classes e pacotes](output/pdf/modelagem-locadora-facil.pdf)
+
 - 🌐 **Aplicação local:** [http://localhost:3000](http://localhost:3000)
 - 🔌 **API local:** [http://localhost:3001](http://localhost:3001) — utiliza as rotas descritas na seção de arquitetura.
 - 📖 **Interface:** [dist/index.html](dist/index.html)

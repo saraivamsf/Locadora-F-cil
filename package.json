@@ -1,0 +1,10 @@
+{
+	"name": "locadora-facil",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "concurrently \"npm:api\" \"npm:site\"",
+		"api": "node server.cjs",
+		"site": "http-server dist -p 3000 -c-1"
+	}
+}

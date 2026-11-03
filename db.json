@@ -1,0 +1,239 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Ana Souza",
+      "email": "cliente@teste.com",
+      "senha": "123456",
+      "tipo": "cliente",
+      "rg": "1234567",
+      "cpf": "00000000191",
+      "endereco": "Rua das Flores, 100",
+      "profissao": "Assistente administrativa",
+      "empregos": [
+        {
+          "empresa": "Empresa Exemplo",
+          "renda": 2800
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Locadora Exemplo",
+      "email": "empresa@teste.com",
+      "senha": "123456",
+      "tipo": "instituicao"
+    },
+    {
+      "id": "3",
+      "nome": "Banco Exemplo",
+      "email": "banco@teste.com",
+      "senha": "123456",
+      "tipo": "instituicao"
+    },
+    {
+      "nome": "Miguel Saraiva",
+      "email": "miguel@email.com",
+      "rg": "mg3456789",
+      "cpf": "10000000000",
+      "endereco": "rua 1 1567",
+      "profissao": "estudante",
+      "empregos": [
+        {
+          "empresa": "Dev",
+          "renda": 50000000
+        }
+      ],
+      "senha": "123456",
+      "tipo": "cliente",
+      "id": "_K9pMrt"
+    },
+    {
+      "nome": "Empresa Legal",
+      "email": "legal@email.com",
+      "endereco": "rua legal 123",
+      "empregos": [],
+      "senha": "123456",
+      "tipo": "instituicao",
+      "id": "9AST1Us"
+    }
+  ],
+  "carros": [
+    {
+      "id": "1",
+      "marca": "Fiat",
+      "modelo": "Argo",
+      "ano": 2023,
+      "placa": "ABC1D23",
+      "diaria": 120,
+      "categoria": "Econômico",
+      "instituicaoId": "2"
+    },
+    {
+      "id": "2",
+      "marca": "Chevrolet",
+      "modelo": "Onix",
+      "ano": 2024,
+      "placa": "DEF4G56",
+      "diaria": 140,
+      "categoria": "Compacto",
+      "instituicaoId": "2"
+    },
+    {
+      "id": "3",
+      "marca": "Hyundai",
+      "modelo": "HB20",
+      "ano": 2023,
+      "placa": "GHI7J89",
+      "diaria": 130,
+      "categoria": "Compacto",
+      "instituicaoId": "2"
+    },
+    {
+      "id": "4",
+      "marca": "Renault",
+      "modelo": "Kwid",
+      "ano": 2022,
+      "placa": "JKL0M12",
+      "diaria": 100,
+      "categoria": "Econômico",
+      "instituicaoId": "2"
+    },
+    {
+      "id": "06d339cf-0641-4fd3-9cd6-7d6230a44582",
+      "instituicaoId": "9AST1Us",
+      "marca": "BMW",
+      "modelo": "320i",
+      "placa": "OLA3B33",
+      "categoria": "Esportivo",
+      "ano": 2026,
+      "diaria": 500,
+      "imagem": "https://www.webmotors.com.br/imagens/prod/348588/BMW_320I_2.0_16V_TURBO_FLEX_SPORT_GP_AUTOMATICO_34858816360041859.webp"
+    },
+    {
+      "id": "959a3984-8058-4afd-ab69-1d9125ac70e2",
+      "instituicaoId": "9AST1Us",
+      "marca": "Ford",
+      "modelo": "Bronco",
+      "placa": "ABC1D24",
+      "categoria": "SUV",
+      "ano": 2026,
+      "diaria": 400,
+      "imagem": "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2025/bronco_sport/overview/2026/colorizer/laranja-arizona/fbr-bronco-sport-colorize-laranja-arizona.jpg.dam.full.high.jpg/1787969700528.jpg"
+    },
+    {
+      "id": "134fa5cd-eff8-4188-8dfb-4f1bf0e72238",
+      "instituicaoId": "9AST1Us",
+      "marca": "Volkswagen",
+      "modelo": "Kombi Redonda",
+      "placa": "OPA1B12",
+      "matricula": "ABC123456",
+      "categoria": "Redondo",
+      "ano": 1973,
+      "diaria": 10000000,
+      "imagem": "https://i.pinimg.com/236x/2f/ea/88/2fea88f5db6b6c9009a41656f4ca6c85.jpg"
+    },
+    {
+      "id": "b4ce85dc-e0d6-4b19-978a-739e1a460d80",
+      "instituicaoId": "9AST1Us",
+      "marca": "BYD",
+      "modelo": "Dolphin",
+      "placa": "TYD3I33",
+      "matricula": "sdfghjk",
+      "categoria": "Elétrico",
+      "ano": 2026,
+      "diaria": 400,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdAkxEDLdrcTZcjR_umEtuiPaVWs-uXhEnJzZpbz1FveAFzIP5xm3KJbU&s=10"
+    }
+  ],
+  "pedidos": [
+    {
+      "carroId": "1",
+      "tipoContrato": "simples",
+      "inicio": "2026-11-10",
+      "fim": "2026-11-12",
+      "clienteId": "1",
+      "total": 360,
+      "status": "Contratado",
+      "parecer": "Aprovação fictícia para testar o protótipo acadêmico.",
+      "avaliadorId": "3",
+      "id": 1
+    },
+    {
+      "carroId": "1",
+      "tipoContrato": "simples",
+      "inicio": "2026-11-23",
+      "fim": "2026-12-23",
+      "clienteId": "_K9pMrt",
+      "total": 3720,
+      "status": "Contratado",
+      "parecer": "legal",
+      "avaliadorId": "2",
+      "id": 2
+    },
+    {
+      "carroId": "06d339cf-0641-4fd3-9cd6-7d6230a44582",
+      "clienteId": "_K9pMrt",
+      "inicio": "2026-11-23",
+      "fim": "2027-03-23",
+      "tipoContrato": "simples",
+      "total": 60500,
+      "status": "Contratado",
+      "parecer": "bom",
+      "avaliadorId": "9AST1Us",
+      "id": "4387f835-d985-4401-8376-4dafa1dbefbb"
+    },
+    {
+      "carroId": "134fa5cd-eff8-4188-8dfb-4f1bf0e72238",
+      "clienteId": "_K9pMrt",
+      "inicio": "2026-11-04",
+      "fim": "2026-11-07",
+      "tipoContrato": "simples",
+      "total": 40000000,
+      "status": "Contratado",
+      "parecer": "ok",
+      "avaliadorId": "9AST1Us",
+      "id": "56be7ce1-0d94-4fc2-baf3-b2cfd4dc52ca"
+    }
+  ],
+  "contratos": [
+    {
+      "pedidoId": 1,
+      "numero": "CT-0001",
+      "proprietarioId": "1",
+      "bancoId": null,
+      "valorCredito": 0,
+      "data": "2026-11-02",
+      "id": 1
+    },
+    {
+      "pedidoId": 2,
+      "numero": "CT-0002",
+      "proprietarioId": "_K9pMrt",
+      "bancoId": null,
+      "valorCredito": 0,
+      "data": "2026-11-02",
+      "id": 2
+    },
+    {
+      "id": "10e83eb1-ab40-4bc2-b45b-a1a103e3c649",
+      "numero": "CT-0003",
+      "pedidoId": "4387f835-d985-4401-8376-4dafa1dbefbb",
+      "proprietarioId": "9AST1Us",
+      "instituicaoId": "9AST1Us",
+      "bancoId": null,
+      "valorCredito": 0,
+      "data": "2026-11-02"
+    },
+    {
+      "id": "26207e39-915d-4dd3-a8df-cd842137c6fe",
+      "numero": "CT-0004",
+      "pedidoId": "56be7ce1-0d94-4fc2-baf3-b2cfd4dc52ca",
+      "proprietarioId": "9AST1Us",
+      "instituicaoId": "9AST1Us",
+      "bancoId": null,
+      "valorCredito": 0,
+      "data": "2026-11-03"
+    }
+  ]
+}

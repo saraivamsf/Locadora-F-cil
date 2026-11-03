@@ -312,7 +312,6 @@ Esses comandos verificam a sintaxe do JavaScript; não validam os fluxos de neg�
 - [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [Node.js — API HTTP](https://nodejs.org/api/http.html)
 - [http-server](https://github.com/http-party/http-server)
-- [concurrently](https://github.com/open-cli-tools/concurrently)
 
 ---
 

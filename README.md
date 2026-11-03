@@ -40,15 +40,11 @@
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Arquitetura](#-arquitetura)
 - [Instalação e Execução](#-instalação-e-execução)
-- [Deploy](#-deploy)
 - [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Demonstração](#-demonstração)
 - [Testes](#-testes)
 - [Documentações de Referência](#-documentações-de-referência)
 - [Autores](#-autores)
-- [Contribuição](#-contribuição)
-- [Agradecimentos](#-agradecimentos)
-- [Licença](#-licença)
 
 ---
 
@@ -59,7 +55,7 @@
 - 📖 **Interface:** [dist/index.html](dist/index.html)
 - ⚙️ **Código da API:** [server.cjs](server.cjs)
 
-Os endereços locais ficam disponíveis após iniciar os serviços. Este README não apresenta uma demonstração hospedada.
+Os endereços locais ficam disponíveis após iniciar os serviços.
 
 ---
 
@@ -118,7 +114,6 @@ A aplicação oferece dois perfis: **Cliente** e **Empresa / Banco**. O cliente 
 | Módulos nativos `http`, `fs`, `path` e `crypto` | Servidor HTTP, arquivos e identificadores de sessão |
 | JSON | Persistência local em `db.json` |
 
-
 ### ⚙️ Ferramentas de execução
 
 - **http-server 14.1.1:** serve os arquivos da pasta `dist/` na porta 3000.
@@ -168,7 +163,7 @@ flowchart LR
 
 As rotas de consulta de usuários, carros, pedidos e contratos exigem autenticação. As permissões são verificadas na API, incluindo o vínculo entre a instituição e o veículo.
 
-### Sessão e limitações
+### Sessão
 
 O cookie de autenticação é HttpOnly e tem duração de sete dias. As sessões ficam em memória e são encerradas ao reiniciar a API. O navegador guarda apenas o ID da conta e a última seção acessada no Local Storage; ao recarregar, a conta é consultada novamente na API.
 
@@ -182,10 +177,6 @@ O cookie de autenticação é HttpOnly e tem duração de sete dias. As sessões
 - Navegador atualizado.
 - Portas **3000** e **3001** disponíveis.
 - Conexão com a internet para carregar o Bootstrap e os badges da documentação.
-
-### 🔑 Variáveis de ambiente
-
-A versão atual não utiliza arquivos `.env`. A API escuta em `127.0.0.1:3001`, e a interface utiliza o nome do host da página com a porta 3001 para acessar o servidor. O servidor estático é configurado no script `site` do `package.json`.
 
 ### 📦 Instalação de dependências
 
@@ -220,15 +211,7 @@ Se preferir, utilize dois terminais na pasta do projeto:
 | 1 | `npm run api` | API em `http://localhost:3001` |
 | 2 | `npm run site` | Interface em `http://localhost:3000` |
 
-Se houver um processo antigo do JSON Server usando a porta 3001, encerre-o antes de iniciar a API atual. Se a API estiver fora do ar, a interface exibirá uma mensagem de erro.
-
----
-
-## ☁️ Deploy
-
-O projeto está configurado para execução local. Não há configuração de hospedagem ou pipeline de deploy incluído.
-
-A pasta `dist/` contém a interface pronta para ser servida, mas publicar apenas esses arquivos não disponibiliza o sistema completo. Uma implantação exige hospedar também a API, ajustar sua URL e as origens permitidas, configurar HTTPS e cookies e substituir o armazenamento de senhas em texto. Também é necessário planejar a persistência dos dados e das sessões.
+Se a API estiver fora do ar, a interface exibirá uma mensagem de erro.
 
 ---
 
@@ -273,7 +256,7 @@ Também é possível cadastrar novas contas de cliente ou instituição para tes
 5. Com o pedido aprovado, o cliente pode confirmá-lo, ou a instituição responsável pode gerar o contrato. Para a modalidade com crédito, informe o valor simulado concedido pela instituição responsável.
 6. Confira o registro em **Contratos** e o acompanhamento no painel **Início** do cliente.
 
-Os quatro veículos iniciais pertencem à Locadora Exemplo. As contas antigas de empresa e banco usam o mesmo perfil **Empresa / Banco**, mas cada instituição acessa somente os pedidos dos seus próprios veículos.
+Os quatro veículos iniciais pertencem à Locadora Exemplo. Cada instituição acessa somente os pedidos dos seus próprios veículos.
 
 ### 💻 Exemplo de chamada à API
 
@@ -294,8 +277,6 @@ A resposta deve ter status **401**, com o seguinte corpo:
 ---
 
 ## 🧪 Testes
-
-O repositório não possui suíte automatizada nem scripts `test` ou `test:e2e` configurados.
 
 ### Verificação de sintaxe
 
@@ -337,18 +318,8 @@ Esses comandos verificam a sintaxe do JavaScript; não validam os fluxos de neg�
 
 ## 👥 Autores
 
+| Nome | Participação |
+| --- | --- |
 | Miguel Saraiva Ferreira | Autor do projeto |
-
----
-
-## 🤝 Contribuição
-
-1. Faça um fork do repositório, se estiver colaborando pelo GitHub.
-2. Crie uma branch para a alteração: `git checkout -b feature/minha-feature`.
-3. Implemente a mudança e confira os fluxos afetados com dados fictícios.
-4. Atualize a documentação quando a alteração modificar a execução ou o comportamento do sistema.
-5. Envie um Pull Request descrevendo a mudança e as verificações realizadas.
-
-Não inclua dados pessoais reais no arquivo `db.json`.
 
 ---
